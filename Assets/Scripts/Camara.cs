@@ -6,20 +6,15 @@ using UnityEngine;
 public class Camara : MonoBehaviour
 {
     bool presionando;
-    static bool camaraActivado;
+    public static bool camaraActivado;
     public GameObject botonMovimiento;
     public GameObject botonCancelar;
     public GameObject botonProps;
-    public GameObject props;
     // Start is called before the first frame update
     void Start()
     {
-        botonCancelar = GameObject.Find("ButtonCancelar");
-        botonMovimiento = GameObject.Find("Button");
-        botonProps = GameObject.Find("ButtonProps");
-        props = GameObject.Find("CanvasProps");
-    }
 
+    }
     public void funcionBoton()
     {
         camaraActivado = true;
@@ -27,23 +22,6 @@ public class Camara : MonoBehaviour
         botonCancelar.SetActive(true);
         botonProps.SetActive(false);
     }
-    public void funcionBotonCancelar()
-    {
-        camaraActivado = false;
-        botonCancelar.SetActive(false);
-        botonMovimiento.SetActive(true);
-        botonProps.SetActive(true);
-        props.SetActive(false);
-    }
-
-    public void componentes()
-    {
-        botonCancelar.SetActive(true);
-        botonMovimiento.SetActive(false);
-        botonProps.SetActive(false);
-        props.SetActive(true);
-    }
-
     // Update is called once per frame
     void Update()
     {
