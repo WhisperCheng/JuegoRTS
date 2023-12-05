@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Cancelar : MonoBehaviour
 {
+    public Camara camara;
     public GameObject botonMovimiento;
     public GameObject botonCancelar;
     public GameObject botonProps;
@@ -14,20 +15,15 @@ public class Cancelar : MonoBehaviour
     {
         
     }
-
-    public void cancelarProps()
-    {
-        botonMovimiento.SetActive(true);
-        botonCancelar.SetActive(false);
-        botonProps.SetActive(true);
-        props.SetActive(false);
-    }
     public void cancelarMovimiento()
     {
-        Camara.camaraActivado = false;
+        camara.desactivarBarn();
+        camara.desactivarBush();
+        camara.desactivarModoCamara();
         botonMovimiento.SetActive(true);
         botonCancelar.SetActive(false);
         botonProps.SetActive(true);
+        props.SetActive (false);
     }
 
     // Update is called once per frame

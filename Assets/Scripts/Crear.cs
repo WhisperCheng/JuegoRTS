@@ -4,55 +4,47 @@ using UnityEngine;
 
 public class Crear : MonoBehaviour
 {
-    static public bool propArbusto;
-    static public bool propArbol;
-    static public bool propGranero;
-    static public bool propSilo;
-    public GameObject botonAtras;
+    public Camara camara;
     public GameObject botonArbusto;
     public GameObject botonGranero;
     public GameObject botonSilo;
     public GameObject botonArbol;
-    public GameObject arbusto;
-    public GameObject arbol;
-    public GameObject granero;
-    public GameObject silo;
     // Start is called before the first frame update
     void Start()
     {
         
     }
-    public void bush()
+    public void botonArbustoClick()
     {
-        propArbusto = true;
+        camara.bush();
+        camara.desactivarBarn();
+        camara.desactivarSilo();
+        camara.desactivarTree();
     }
-    public void tree()
+    public void botonTreeClick()
     {
-        propArbol = true;
+        camara.tree();
+        camara.desactivarSilo();
+        camara.desactivarBush();
+        camara.desactivarBarn();
     }
-    public void barn()
+    public void botonBarnClick()
     {
-        propGranero = true;
+        camara.barn();
+        camara.desactivarTree();
+        camara.desactivarBush();
+        camara.desactivarSilo();
     }
-    public void Silo()
+    public void botonSiloClick()
     {
-        propSilo = true;
+        camara.Silo();
+        camara.desactivarBush();
+        camara.desactivarBarn();
+        camara.desactivarTree();
     }
     // Update is called once per frame
     void Update()
     {
-        if (propArbusto == true && Input.GetMouseButtonDown(0))
-        {
-            Ray laser = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-            RaycastHit rayoArbusto;
-
-            Debug.Log("RayoArbusto");
-
-            if (Physics.Raycast(laser, out rayoArbusto))
-            {
-                GameObject.Instantiate(arbusto, rayoArbusto.point, Quaternion.identity);
-            }
-        }
     }
 }
