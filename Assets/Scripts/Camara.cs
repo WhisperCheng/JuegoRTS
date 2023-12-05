@@ -124,5 +124,19 @@ public class Camara : MonoBehaviour
                 }
             }
         }
+        if (propArbol == true  && Input.GetMouseButtonDown(0))
+        {
+            Ray laser = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+            RaycastHit rayoTree;
+
+            if (Physics.Raycast(laser, out rayoTree))
+            {
+                if (rayoTree.collider.gameObject.layer == LayerMask.NameToLayer("Suelo"))
+                {
+                    GameObject.Instantiate(arbol, rayoTree.point, Quaternion.Euler(-90,0,0));
+                }
+            }
+        }
     }
 }
