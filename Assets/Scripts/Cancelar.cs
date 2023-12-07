@@ -19,6 +19,8 @@ public class Cancelar : MonoBehaviour
     {
         camara.desactivarBarn();
         camara.desactivarBush();
+        camara.desactivarcasita();
+        camara.desactivarTree();
         camara.desactivarModoCamara();
         botonMovimiento.SetActive(true);
         botonCancelar.SetActive(false);

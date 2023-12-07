@@ -7,7 +7,7 @@ public class Crear : MonoBehaviour
     public Camara camara;
     public GameObject botonArbusto;
     public GameObject botonGranero;
-    public GameObject botonSilo;
+    public GameObject botonCasita;
     public GameObject botonArbol;
     // Start is called before the first frame update
     void Start()
@@ -18,13 +18,13 @@ public class Crear : MonoBehaviour
     {
         camara.bush();
         camara.desactivarBarn();
-        camara.desactivarSilo();
+        camara.desactivarcasita();
         camara.desactivarTree();
     }
     public void botonTreeClick()
     {
         camara.tree();
-        camara.desactivarSilo();
+        camara.desactivarcasita();
         camara.desactivarBush();
         camara.desactivarBarn();
     }
@@ -33,11 +33,11 @@ public class Crear : MonoBehaviour
         camara.barn();
         camara.desactivarTree();
         camara.desactivarBush();
-        camara.desactivarSilo();
+        camara.desactivarcasita();
     }
-    public void botonSiloClick()
+    public void botonCasitaClick()
     {
-        camara.Silo();
+        camara.casita();
         camara.desactivarBush();
         camara.desactivarBarn();
         camara.desactivarTree();

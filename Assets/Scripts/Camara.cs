@@ -9,13 +9,13 @@ public class Camara : MonoBehaviour
     public bool propArbusto;
     public bool propArbol;
     public bool propGranero;
-    public bool propSilo;
+    public bool propCasita;
     bool presionando;
     public bool camaraActivado;
     public GameObject arbusto;
     public GameObject arbol;
     public GameObject granero;
-    public GameObject silo;
+    public GameObject Casita;
     // Start is called before the first frame update
     void Start()
     {
@@ -45,13 +45,13 @@ public class Camara : MonoBehaviour
     {
         propGranero = false;
     }
-    public void Silo()
+    public void casita()
     {
-        propSilo = true;
+        propCasita = true;
     }
-    public void desactivarSilo()
+    public void desactivarcasita()
     {
-        propSilo = false;
+        propCasita = false;
     }
     public void activarModoCamara()
     {
@@ -111,7 +111,6 @@ public class Camara : MonoBehaviour
         }
         if (propGranero == true && Input.GetMouseButtonDown(0))
         {
-
             Ray laser = Camera.main.ScreenPointToRay(Input.mousePosition);
 
             RaycastHit rayoBarn;
@@ -135,6 +134,20 @@ public class Camara : MonoBehaviour
                 if (rayoTree.collider.gameObject.layer == LayerMask.NameToLayer("Suelo"))
                 {
                     GameObject.Instantiate(arbol, rayoTree.point, Quaternion.Euler(-90,0,0));
+                }
+            }
+        }
+        if (propCasita == true && Input.GetMouseButtonDown(0))
+        {
+            Ray laser = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+            RaycastHit rayoLittleHouse;
+
+            if (Physics.Raycast(laser, out rayoLittleHouse))
+            { 
+                if (rayoLittleHouse.collider.gameObject.layer == LayerMask.NameToLayer("Suelo"))
+                {
+                    GameObject.Instantiate(Casita, rayoLittleHouse.point, Quaternion.Euler(0,-90,0));
                 }
             }
         }
