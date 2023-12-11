@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 // Unicamente se encarga del personaje (camara) -> muevo, añado cosas. LANZO RAYOS
 public class Camara : MonoBehaviour
@@ -66,7 +67,6 @@ public class Camara : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         if (camaraActivado)
         {
             float mouseX = Input.GetAxis("Mouse X");
@@ -94,7 +94,7 @@ public class Camara : MonoBehaviour
                 }
             }
         }
-        if (propArbusto == true && Input.GetMouseButtonDown(0))
+        if (propArbusto == true && Input.GetMouseButtonDown(0) && !EventSystem.current.IsPointerOverGameObject())
         {
             
             Ray laser = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -109,7 +109,7 @@ public class Camara : MonoBehaviour
                 }
             }
         }
-        if (propGranero == true && Input.GetMouseButtonDown(0))
+        if (propGranero == true && Input.GetMouseButtonDown(0) && !EventSystem.current.IsPointerOverGameObject())
         {
             Ray laser = Camera.main.ScreenPointToRay(Input.mousePosition);
 
@@ -123,7 +123,7 @@ public class Camara : MonoBehaviour
                 }
             }
         }
-        if (propArbol == true  && Input.GetMouseButtonDown(0))
+        if (propArbol == true  && Input.GetMouseButtonDown(0) && !EventSystem.current.IsPointerOverGameObject())
         {
             Ray laser = Camera.main.ScreenPointToRay(Input.mousePosition);
 
@@ -137,7 +137,7 @@ public class Camara : MonoBehaviour
                 }
             }
         }
-        if (propCasita == true && Input.GetMouseButtonDown(0))
+        if (propCasita == true && Input.GetMouseButtonDown(0) && !EventSystem.current.IsPointerOverGameObject())
         {
             Ray laser = Camera.main.ScreenPointToRay(Input.mousePosition);
 

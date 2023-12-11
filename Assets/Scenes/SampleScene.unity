@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -354,6 +354,7 @@ RectTransform:
   - {fileID: 1274619722}
   - {fileID: 1025611486}
   - {fileID: 2017770296}
+  - {fileID: 428541052}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -453,6 +454,164 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &428541051
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 428541052}
+  - component: {fileID: 428541054}
+  - component: {fileID: 428541053}
+  - component: {fileID: 428541055}
+  m_Layer: 5
+  m_Name: Recuento
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &428541052
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 428541051}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 298974943}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 110, y: -40}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &428541053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 428541051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'Arbol = 0
+
+    Arbusto = 0
+
+    Granero = 0
+
+    Casita = 0'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: -532.71387, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &428541054
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 428541051}
+  m_CullTransparentMesh: 1
+--- !u!114 &428541055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 428541051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16d0c259c1631f04fb83cfdc7a255585, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arbol: []
+  arbusto: []
+  granero: []
+  casita: []
+  recuento: {fileID: 428541053}
 --- !u!1 &460074516
 GameObject:
   m_ObjectHideFlags: 0
@@ -738,7 +897,7 @@ MonoBehaviour:
   camara: {fileID: 963194229}
   botonArbusto: {fileID: 0}
   botonGranero: {fileID: 0}
-  botonCasita: {fileID: 474516865}
+  botonCasita: {fileID: 1978942524133861436, guid: fa99564b7eef399488010111e7aab1bc, type: 3}
   botonArbol: {fileID: 0}
 --- !u!1 &489569153
 GameObject:
@@ -1285,10 +1444,10 @@ MonoBehaviour:
   propGranero: 0
   propCasita: 0
   camaraActivado: 0
-  arbusto: {fileID: 919132149155446097, guid: a8c864f5771d5ef47b0b94395a78c257, type: 3}
-  arbol: {fileID: 919132149155446097, guid: ee1ea089b018bcc4cab06d9092e0c1af, type: 3}
-  granero: {fileID: 919132149155446097, guid: af3b217c48c6079438f00c5f5017e608, type: 3}
-  Casita: {fileID: 919132149155446097, guid: f7bfd873314a9de4b92713ebd561529a, type: 3}
+  arbusto: {fileID: 7417222544025843826, guid: c37ba4dccab2c72408d9b8dbcac67d2c, type: 3}
+  arbol: {fileID: 1968647889272557429, guid: a59f01a5ffa855f429c42a17751cbfaa, type: 3}
+  granero: {fileID: 4282753677545740216, guid: 21627a379b6de42468ebdf9fe50cace6, type: 3}
+  Casita: {fileID: 1978942524133861436, guid: fa99564b7eef399488010111e7aab1bc, type: 3}
 --- !u!54 &963194230
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1614,7 +1773,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camara: {fileID: 963194229}
-  botonArbusto: {fileID: 1169000643}
+  botonArbusto: {fileID: 7417222544025843826, guid: c37ba4dccab2c72408d9b8dbcac67d2c, type: 3}
   botonGranero: {fileID: 2021798587}
   botonCasita: {fileID: 474516865}
   botonArbol: {fileID: 1511530105}
@@ -2159,7 +2318,7 @@ MonoBehaviour:
   botonArbusto: {fileID: 1169000643}
   botonGranero: {fileID: 2021798587}
   botonCasita: {fileID: 474516865}
-  botonArbol: {fileID: 1511530105}
+  botonArbol: {fileID: 1968647889272557429, guid: a59f01a5ffa855f429c42a17751cbfaa, type: 3}
 --- !u!1 &1599909511
 GameObject:
   m_ObjectHideFlags: 0
@@ -2730,7 +2889,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camara: {fileID: 963194229}
   botonArbusto: {fileID: 1169000643}
-  botonGranero: {fileID: 2021798587}
+  botonGranero: {fileID: 4282753677545740216, guid: 21627a379b6de42468ebdf9fe50cace6, type: 3}
   botonCasita: {fileID: 474516865}
   botonArbol: {fileID: 1511530105}
 --- !u!1660057539 &9223372036854775807
