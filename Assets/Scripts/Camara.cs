@@ -11,6 +11,7 @@ public class Camara : MonoBehaviour
     public bool propArbol;
     public bool propGranero;
     public bool propCasita;
+    public bool borrar;
     bool presionando;
     public bool camaraActivado;
     public GameObject arbusto;
@@ -58,10 +59,17 @@ public class Camara : MonoBehaviour
     {
         camaraActivado = true;
     }
-
     public void desactivarModoCamara()
     {
         camaraActivado = false;
+    }
+    public void activarBorrar()
+    {
+        borrar = true;
+    }
+    public void desactivarBorrar()
+    {
+        borrar = false;
     }
 
     // Update is called once per frame
@@ -149,6 +157,18 @@ public class Camara : MonoBehaviour
                 {
                     GameObject.Instantiate(Casita, rayoLittleHouse.point, Quaternion.Euler(0,-90,0));
                 }
+            }
+        }
+        if (borrar == true &&  Input.GetMouseButtonDown(0) && !EventSystem.current.IsPointerOverGameObject())
+        {
+            int mascara = LayerMask.GetMask("Props");
+
+            Ray laser = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+            RaycastHit rayoBorrar;
+            if (Physics.Raycast(laser, out rayoBorrar, Mathf.Infinity, mascara))
+            {
+                Destroy(rayoBorrar.collider.gameObject);
             }
         }
     }

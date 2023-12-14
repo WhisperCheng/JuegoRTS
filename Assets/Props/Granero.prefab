@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3198007131358975572}
   - component: {fileID: 7142669280986005943}
   - component: {fileID: 4166249529155645255}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7821889398994602569}
-  m_Layer: 0
+  - component: {fileID: -4284342395141372882}
+  m_Layer: 8
   m_Name: Granero
   m_TagString: Granero
   m_Icon: {fileID: 0}
@@ -121,6 +122,27 @@ Transform:
   - {fileID: 4389246032577455471}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &-4284342395141372882
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4282753677545740216}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 20.594269, y: 12.7249, z: 16.323215}
+  m_Center: {x: -0.005923748, y: 6.36245, z: -0.0058631897}
 --- !u!1 &4475491214208758077
 GameObject:
   m_ObjectHideFlags: 0
@@ -132,7 +154,7 @@ GameObject:
   - component: {fileID: 4389246032577455471}
   - component: {fileID: 3768734238418298623}
   - component: {fileID: 882367882221025564}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ventanas Traseras
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -215,7 +237,7 @@ GameObject:
   - component: {fileID: 1885650726879273032}
   - component: {fileID: 1416199113825163958}
   - component: {fileID: 8450776944062682331}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ventanas Frontal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -298,7 +320,7 @@ GameObject:
   - component: {fileID: 7517711840907498124}
   - component: {fileID: 1322815477363712169}
   - component: {fileID: 5548922632637140706}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -385,7 +407,7 @@ GameObject:
   - component: {fileID: 1499201694550550234}
   - component: {fileID: 1947404118454813422}
   - component: {fileID: 4599612858764084496}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ventanas Derechas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -468,7 +490,7 @@ GameObject:
   - component: {fileID: 4408819655577633132}
   - component: {fileID: 18380967023070812}
   - component: {fileID: 2689048880682398226}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ventanas Izqueirdas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -551,7 +573,7 @@ GameObject:
   - component: {fileID: 2741446539865408286}
   - component: {fileID: 889858872177412851}
   - component: {fileID: 158898814996433098}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}

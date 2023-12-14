@@ -8,6 +8,8 @@ public class botonProps : MonoBehaviour
     public GameObject botonCancelar;
     public GameObject botonprops;
     public GameObject props;
+    public GameObject botonBorrar;
+    public GameObject botonBorrarTodo;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +21,8 @@ public class botonProps : MonoBehaviour
         botonCancelar.SetActive(true);
         botonprops.SetActive(false);
         props.SetActive(true);
+        botonBorrar.SetActive(false);
+        botonBorrarTodo.SetActive(false);
     }
     // Update is called once per frame
     void Update()

@@ -9,7 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3321775399282385768}
-  m_Layer: 0
+  - component: {fileID: 5197039196339686244}
+  m_Layer: 8
   m_Name: Casita
   m_TagString: Casita
   m_Icon: {fileID: 0}
@@ -35,6 +36,27 @@ Transform:
   - {fileID: 7539344521531902887}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &5197039196339686244
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1978942524133861436}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 6, y: 5, z: 6}
+  m_Center: {x: 0, y: 2.5, z: 0}
 --- !u!1 &3536396405447134038
 GameObject:
   m_ObjectHideFlags: 0
@@ -46,7 +68,7 @@ GameObject:
   - component: {fileID: 1797033757992050503}
   - component: {fileID: 2725423560302458398}
   - component: {fileID: 6692898054025242093}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -131,7 +153,7 @@ GameObject:
   - component: {fileID: 7539344521531902887}
   - component: {fileID: 8334068155181254718}
   - component: {fileID: 3654378342136086335}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -214,7 +236,7 @@ GameObject:
   - component: {fileID: 478542452812394087}
   - component: {fileID: 3919639812834213493}
   - component: {fileID: 2669213251769389343}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -297,7 +319,7 @@ GameObject:
   - component: {fileID: 2993506299705740313}
   - component: {fileID: 1404564845374816427}
   - component: {fileID: 8213362052200991079}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}

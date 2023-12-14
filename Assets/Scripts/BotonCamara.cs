@@ -8,6 +8,8 @@ public class BotonCamara : MonoBehaviour
     public GameObject botonMovimiento;
     public GameObject botonCancelar;
     public GameObject botonProps;
+    public GameObject botonBorrar;
+    public GameObject botonBorrarTodo;
     // Start is called before the first frame update
     public void funcionBoton()
     {
@@ -15,6 +17,8 @@ public class BotonCamara : MonoBehaviour
         botonMovimiento.SetActive(false);
         botonCancelar.SetActive(true);
         botonProps.SetActive(false);
+        botonBorrar.SetActive(false);
+        botonBorrarTodo.SetActive(false);
     }
  
 }

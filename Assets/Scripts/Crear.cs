@@ -5,10 +5,6 @@ using UnityEngine;
 public class Crear : MonoBehaviour
 {
     public Camara camara;
-    public GameObject botonArbusto;
-    public GameObject botonGranero;
-    public GameObject botonCasita;
-    public GameObject botonArbol;
     // Start is called before the first frame update
     void Start()
     {
